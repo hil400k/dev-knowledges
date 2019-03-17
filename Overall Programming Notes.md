@@ -54,3 +54,5 @@ class NewsFacade {
   }
 }
 ```
+
+> Use online tests before interview
