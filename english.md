@@ -92,4 +92,26 @@ or a specific point of time in the past
 > Future will
 
 - To make predictions about the future, usually with perharps or after the verbs belive, 
-think, hope, expect, be sure, etc
+think, hope, expect, be sure, etc.
+`She'll probably be here tomorrow`
+- To talk about spontaneous decisions.
+`We've run out of milk; I'll go and buy some`
+- For promises
+`I'll be on time, don't worry!`
+
+> Future Progressive
+
+- To talk about actions that will be in progress at a specific time in the future.
+`At 9 o'clock tomorrow, she'll be flying to Egypt`
+
+> Future Perfect Simple
+
+- To talk, about actions that will be completed before a specific time or another action in the future. 
+The action which follows the first one is in the Present Simple
+`She'll have returned by the time you leave`
+
+> Future Perfect Progressive
+
+- To show the duration of an action up to a certain point of time in the future.
+The action may contimue further.
+`By midnight we will have been flying for seven hours`
