@@ -70,3 +70,19 @@ other were sleeping and few were walking up and down`
 `My brother was always taking my toys when we were young`
 - To describe an action in progress in the past that was interrupted by another action.
 `While I was diving, I saw a cat in the street`
+
+> Past Perfect Simple
+
+- To describe an action which was completed before a specific point of time in the past
+`My mum had done the washing-up by midnight`
+- To describe an action that was completed before another action in the past. The second
+action is in the Past Simple
+`The film had already started when we got the cinema`
+
+> Past Perfect Progressive
+
+- To emphasise the duration of an action that was in progress before another action
+or a specific point of time in the past
+`He had been living in London for 15 years when he moved to Glasgowe`
+- To refer to an action whose duration caused visible results at a later point of time in the past
+`They were tired because they had been cleaning the house all day`
