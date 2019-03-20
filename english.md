@@ -86,3 +86,10 @@ or a specific point of time in the past
 `He had been living in London for 15 years when he moved to Glasgowe`
 - To refer to an action whose duration caused visible results at a later point of time in the past
 `They were tired because they had been cleaning the house all day`
+
+---
+
+> Future will
+
+- To make predictions about the future, usually with perharps or after the verbs belive, 
+think, hope, expect, be sure, etc
