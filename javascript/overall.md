@@ -17,7 +17,7 @@ function Parent() {
 }
 Parent.prototype.log = function() { console.log(this.name) }
 ```
-> It will set __proto__ property of objects created with new to Parent.prototype
+> It will set `__proto__` property of objects created with new to Parent.prototype
 
 > Next code is doing the same
 ```js
