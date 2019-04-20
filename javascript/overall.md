@@ -18,8 +18,13 @@ function Parent() {
 Parent.prototype.log = function() { console.log(this.name) }
 ```
 > It will set __proto__ property of objects created with new to Parent.prototype
+
 > Next code is doing the same
 ```js
  const item = new Parent();
  item.__proto__.log = function() { console.log(this.name) }
+```
+> Default prototype object has only one field: constructor - reference to function (Parent)
+```js
+Parent.prototype → { constructor: Parent }
 ```
