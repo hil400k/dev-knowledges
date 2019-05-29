@@ -56,3 +56,5 @@ class NewsFacade {
 ```
 
 > Use online tests before interview
+
+> MAC OS give full permissions for folder `sudo chmod 777 folder-name`
