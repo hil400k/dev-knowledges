@@ -35,7 +35,7 @@ data, height, width
 
 > Which of the following HTML elements is used to create vector graphics?
 
-<svg />
+svg
 
 > What is the main difference between HTML and XHTML?
 
