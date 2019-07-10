@@ -121,4 +121,81 @@ disabled (correct: autoplay, controls, height, loop, muted, poster, preload, src
 
 Polling URLs in background, Syntax highlighting without blocking code editing capabilities in online IDEs
 
+> Which of the following HTML5 features is capable of taking a screenshot of a web page?
+
+Canvas
+
+> Which of the following video tag attributes are invalid in HTML5?
+
+play, mute, pause
+
+> HTML5 Canvas can be used to create images.
+
+true
+
+> Which of the following statements are correct with regard to the <hr> and <br> elements of HTML5?
+
+The <hr> element is used to insert the horizontal line within the document and the <br> element is used to insert a single line break.
+
+> What is the limit to the length of HTML attributes?
+
+65536
+
+> Which of the following examples contain invalid implementations of the ampersand character in HTML5?
+
+foo &0; bar
+
+> Which of the following <link> attributes are not supported in HTML5?
+
+charset
+
+> In HTML5, which of the following is not a valid value for the type attribute when used with the <command> tag shown below?
+
+Button
+
+> Which event is fired when an element loses its focus in an HTML5 document?
+
+onblur
+
+> What is the purpose of the <q> element in HTML5?
+  
+It is used to define the start of a short quotation.
+
+> Which of the following is the best method to store an array in localStorage?
+
+```js var names = []; names[0] = prompt(«New member name?»); localStorage[«names»] = JSON.stringify(names); var storedNames = JSON.parse(localStorage[«names»]);```
+
+> What does the icon attribute of the HTML5 command tag define?
+
+It is used to define the URL of an image to display as the command.
+
+> Which of the following methods are valid for navigating to a fragment identifier? http://demo.com/#foo
+Note: There may be more than one right answer.
+
+``` <a id=»foo»>bar</a> ```
+
+> Which of the following events is not supported in HTML5?
+
+onreset
+
+> Which of the following are valid HTML5 elements?
+
+all correct (canvas summary aside video)
+
+> Which of the following is an invalid value for the type attribute of a command tag?
+
+command
+
+> Which of the following are true regarding the <keygen> tag in HTML5?
+
+``` The <keygen> tag is deprecated in HTML5. ```
+The <keygen> tag specifies a key-pair generator field used for forms.
+
+> Which of the following is not an attribute of the <meta> element in HTML5?
+
+scheme
+
+> Yes
+
+
 
