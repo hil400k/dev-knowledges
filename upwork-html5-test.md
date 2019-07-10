@@ -133,9 +133,9 @@ play, mute, pause
 
 true
 
-> Which of the following statements are correct with regard to the <hr> and <br> elements of HTML5?
+> Which of the following statements are correct with regard to the ``` <hr> and <br> ``` elements of HTML5?
 
-The <hr> element is used to insert the horizontal line within the document and the <br> element is used to insert a single line break.
+The ``` <hr> ``` element is used to insert the horizontal line within the document and the ``` <br> ``` element is used to insert a single line break.
 
 > What is the limit to the length of HTML attributes?
 
