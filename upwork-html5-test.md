@@ -52,3 +52,73 @@ stopped
 > Select all the valid attributes of an audio element.
 
 autoplay, controls, src
+
+> Which of the following methods can be used to estimate page load times?
+
+Using the Navigation Timing JavaScript API.
+
+> Which of the following are the valid values of the <a> element’s target attribute in HTML5?
+
+_blank, _self, _parent, _top
+
+> Assuming that some text needs to be written on an HTML5 canvas, select a replacement for the commented line below:
+```js <canvas id=»e» width=»200″ height=»200″></canvas>
+<script>
+var canvas = document.getElementById(«e»);
+//insert code here
+context.fillStyle = «blue»;
+context.font = «bold 16px Arial»;
+context.fillText(«Zibri», 100, 100);
+</script>
+```
+var context = canvas.getContext(«2d»);
+
+> What is the role of the <dfn> element in HTML5?
+
+It is used to define a definition term.
+
+> Which of the following is a possible way to get fullscreen video played from the browser using HTML5?
+```html
+<video height=»100%» width=»100%»>
+```
+> Which method of HTMLCanvasElement is used to represent image of Canvas Element?
+
+toDataURL()
+
+> Which of the following will detect when an HTML5 video has finished playing?
+
+```js var video = document.getElementsByTagName(‘video’)[0]; video.onended = function(e) { } ```
+
+> Which method of the HTMLCanvasElement is used to represent an image of a canvas element?
+
+toDataURL
+
+> Which of the following will restrict an input element to accept only numerical values in a text field?
+
+``` <input type=»number» /> ```
+
+> Which of the following is the correct way to display a PDF file in the browser?
+
+``` <object type=»application/pdf» data=»filename.pdf» width=»100%» height=»100%»/> ```
+
+> Which of the following is the best method to detect HTML5 Canvas support in web browsers?
+
+!!window.HTMLCanvasElement
+
+> Which media event is triggered when there is an error in fetching media data in HTML5?
+
+onstalled
+
+> Which of the following is the correct way to check browser support for WebSocket?
+
+```js console.log(window[‘WebSocket’] ? ‘supported’ : ‘not supported’); ```
+
+> Which of the following is not a valid attribute for the <video> element in HTML5?
+
+disabled (correct: autoplay, controls, height, loop, muted, poster, preload, src, width)
+
+> Which of the following are sample use cases for HTML5 web workers?
+
+Polling URLs in background, Syntax highlighting without blocking code editing capabilities in online IDEs
+
+
