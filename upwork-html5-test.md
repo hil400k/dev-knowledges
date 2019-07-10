@@ -195,7 +195,9 @@ The <keygen> tag specifies a key-pair generator field used for forms.
 
 scheme
 
-> Yes
+> Can we use SVG tags directly in HTML5 without using any plugin?
+
+Yes
 
 
 
