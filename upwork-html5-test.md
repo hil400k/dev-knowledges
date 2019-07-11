@@ -199,5 +199,36 @@ scheme
 
 Yes
 
+> How to make an element draggable in HTML5?
+
+set the draggable attribute to true as draggable=»true»
+
+> Which of the following is not a core method of WebSQL Database API?
+
+connect
+
+> Which one of the following is not a valid input control in HTML5?
+
+address
+
+> Which element defines the title of a work (e.g. a book, a song, a movie, etc.)?
+
+``` <title ```
+
+> The HTML5 element used to draw a graphics via scripting?
+
+canvas
+
+> Which value of Socket.readyState atribute of WebSocket indicates that the connection is going through the closing handshake?
+
+2
+
+> How to declare HTML5 document type?
+
+``` <!DOCTYPE html> ```
+
+> Is WebSQL a part of HTML5 specification?
+
+No
 
 
