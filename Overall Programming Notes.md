@@ -66,3 +66,5 @@ class NewsFacade {
 > `cd ~/; nano .bash_profile` `allias add-alias="cd ~/; nano .bash_profile"` TO Add New Alias Command To Add Aliase
 
 > USE NANO EDITOR FROM TERMINAL
+
+> TERMINAL: you can combine commands with `&&` or `;`
