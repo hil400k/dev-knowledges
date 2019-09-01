@@ -58,3 +58,11 @@ class NewsFacade {
 > Use online tests before interview
 
 > MAC OS give full permissions for folder `sudo chmod 777 folder-name`
+
+> sudo pkill -9 ng node npm (kill all node processes)
+
+> open -a telegram; open -a skype; open -a webstorm; open -a chrome (MAC command to run few app in one time from terminal)
+
+> `cd ~/; nano .bash_profile` `allias add-alias="cd ~/; nano .bash_profile"` TO Add New Alias Command To Add Aliase
+
+> USE NANO EDITOR FROM TERMINAL
