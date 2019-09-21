@@ -7,3 +7,6 @@ is invoked right before calling the render method, both on the initial mount and
 `componentDidUpdate(prevProps, prevState, snapshot)`
 - `shouldComponentUpdate()` - invoked before rendering when new props or state are being received.
 - `componentDidMount()` called after `render() > getSnapshotBeforeUpdate()`
+
+http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
