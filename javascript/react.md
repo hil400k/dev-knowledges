@@ -55,3 +55,20 @@ function Page(props) {
 // ... which renders ...
 {props.userLink}
 ```
+- `Context.Provider`
+```jsx
+<MyContext.Provider value={/* some value */}>
+class MyClass extends React.Component {
+  componentDidUpdate() {
+    let value = this.context;
+    
+    ...
+```
+For function components
+```jsx
+<MyContext.Consumer>
+  {value => /* render something based on the context value */}
+</MyContext.Consumer>
+```
+Context objects should be created using 
+`React.createContext({})`
