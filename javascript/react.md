@@ -22,4 +22,15 @@ http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
   "include": ["src"]
 }
 ```
+- `@import-normalize;` can be controlled via browserlist in package.json
+- To add `.svg`
+```jsx
+import { ReactComponent as Logo } from './logo.svg';
+const App = () => (
+  <div>
+    {/* Logo is an actual React component */}
+    <Logo />
+  </div>
+);
+```
 
