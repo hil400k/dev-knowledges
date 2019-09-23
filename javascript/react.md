@@ -61,8 +61,10 @@ function Page(props) {
 class MyClass extends React.Component {
   componentDidUpdate() {
     let value = this.context;
-    
-    ...
+  }
+}
+
+MyClass.contextType = MyContext;
 ```
 For function components
 ```jsx
@@ -72,3 +74,4 @@ For function components
 ```
 Context objects should be created using 
 `React.createContext({})`
+
