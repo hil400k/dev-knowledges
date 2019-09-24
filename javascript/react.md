@@ -13,8 +13,9 @@ http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 - `Controlled components` are inputs that have state controlled be react (setState()). React provides value attr for all inputs besides type=file.
 - `Uncontrolled compoents` are components that use `ref` attr to handle updates or to get value
 
-- <details>
-<summary>`Absolute imports`: create `jsconfig.json`</summary>
+- `Absolute imports`: create `jsconfig.json`
+<details>
+<summary>Code</summary>
 ```json
 {
   "compilerOptions": {
