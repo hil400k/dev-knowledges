@@ -14,8 +14,6 @@ http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 - `Uncontrolled compoents` are components that use `ref` attr to handle updates or to get value
 
 - `Absolute imports`: create `jsconfig.json` 
-<details>
-<summary>Code</summary>
 
 ```json
 {
@@ -25,7 +23,6 @@ http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
   "include": ["src"]
 }
 ```
-</details>
 
 
 - `@import-normalize;` can be controlled via browserlist in package.json
