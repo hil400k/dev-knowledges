@@ -75,4 +75,6 @@ For function components
 Context objects should be created using 
 `React.createContext({})`
 
-- ```jsx <input type="text"  defaultValue="some val" ref={this.input} /> ``` Default value props exists for uncontrolled components to have possibility to set default value. If to set just value it willn't have a possibility to change a value of input
+- ```jsx
+<input type="text"  defaultValue="some val" ref={this.input} /> 
+``` Default value props exists for uncontrolled components to have possibility to set default value. If to set just value it willn't have a possibility to change a value of input
