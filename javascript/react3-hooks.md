@@ -26,3 +26,15 @@ function Example() {
   );
 }
 ```
+
+- You should return function from `useEffect` that will be called in the same moment as `componentWillUnmount` in class component. Next is an example with a subscribe/uncubscribe.
+
+```jsx
+useEffect(() => {
+    ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+
+    return () => {
+      ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
+    };
+  });
+```
