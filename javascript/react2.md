@@ -44,3 +44,7 @@ class Mouse extends React.Component {
   }
 }
 ```
+- `HOC` can be used to as a decorator (or wrapper) that gives some additional logic to some component.
+For example we have few components that should have subscribe/unsubscribe.
+
+
