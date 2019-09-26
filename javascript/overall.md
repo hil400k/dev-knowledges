@@ -28,3 +28,11 @@ Parent.prototype.log = function() { console.log(this.name) }
 ```js
 Parent.prototype → { constructor: Parent }
 ```
+
+- Rendering starts only after JS processed all calculations.
+- JS engine works 'First in - First out'. For example next tasks: 
+
+`dificult scripts is running` → `mouseclick during this time` → `time is off in previously set timeout `. First browser will wait for script calculations → mouseclick handler → timeout callback
+
+- `Macro Tasks` (dom event, timeout), `Micro Tasks` (Promise) are after;
+`1 Macro Task` ▸ `rendering` ▸ `All Micro Tasks`
