@@ -48,3 +48,35 @@ class Mouse extends React.Component {
 For example we have few components that should have subscribe/unsubscribe.
 - `HOF` is a function that takes function as a param, returns function or both cases together.
 
+- Simple use case fur `render` prop
+```jsx
+...
+render() {
+    return (
+      <div>
+        <Parent render={({name}) => (<Child name={name} /> )} />
+      </div>
+    );
+  }
+...
+```
+Parent.js
+```jsx
+import React from 'react';
+
+export default (props) => {
+  return props.render({ name: 'SuperName' }); 
+};
+```
+Child.js
+```jsx
+import React from 'react';
+
+export default ({ name }) => {
+  return (
+    <h1>
+      {name} !!!
+    </h1>
+  );
+};
+```
