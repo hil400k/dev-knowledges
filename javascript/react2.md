@@ -80,3 +80,4 @@ export default ({ name }) => {
   );
 };
 ```
+► Result: `<h1>SuperName !!!</h1>
