@@ -35,4 +35,4 @@ Parent.prototype → { constructor: Parent }
 `dificult scripts is running` → `mouseclick during this time` → `time is off in previously set timeout `. First browser will wait for script calculations → mouseclick handler → timeout callback
 
 - `Macro Tasks` (dom event, timeout), `Micro Tasks` (Promise) are after;
-`1 Macro Task` ▸ `rendering` ▸ `All Micro Tasks`
+`1 Macro Task` ▸ `All Micro Tasks` ▸ `rendering`
