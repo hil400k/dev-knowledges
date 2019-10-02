@@ -81,3 +81,16 @@ export default ({ name }) => {
 };
 ```
 ► Result: ```<h1>SuperName !!!</h1>```
+
+---
+
+### Redux
+
+> `store.subscribe()`
+
+> Ways to copy array: `someArr.filter(result => true);` `[...someAee]`
+
+> To get value in reducer from another reducer, you should pass it within
+> action object ({ type: 'SOME_TYPE', data: 'HERE!!!!' } }) from a component
+
+> `(dispatch, getState) => { getState(); ... }` function to get current state 
