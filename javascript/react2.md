@@ -94,3 +94,52 @@ export default ({ name }) => {
 > action object ({ type: 'SOME_TYPE', data: 'HERE!!!!' } }) from a component
 
 > `(dispatch, getState) => { getState(); ... }` function to get current state 
+
+---
+
+> `Middleware structure`
+```jsx
+const logger = store => next => action => {
+  console.log('dispatching', action)
+  let result = next(action)
+  console.log('next state', store.getState())
+  return result
+}
+```
+We have 2 returned functions because it allows chaining and dispatch accumulating function;
+```jsx
+{
+  const store = {
+    dispatch(action) {
+      return action;
+    },
+    getState() {
+      return 'state';
+    }
+  };
+
+  function logger2(store) {
+    return function wrapDispatchToAddLogging(next) {
+      return function dispatchAndLog(action) {
+        console.log('dispatching', action)
+        let result = next(action)
+        return result
+      }
+    }
+  };
+
+  function logger3(store) {
+    return function wrapDispatchToAddLogging(next) {
+      return function dispatchAndLog(action) {
+        console.log('dispatching2', action)
+        let result = next(action)
+        return result
+      }
+    }
+  }
+
+  let point = logger2(store)(store.dispatch);
+  let point2 = logger3(store)(point)('he');
+}
+```
+> Output `dispatching2 he` `dispatching he`. It is because `dispatch` (next()) accumulates logic (becomes bigger) after each call and it is passed already improved to next middlware.
