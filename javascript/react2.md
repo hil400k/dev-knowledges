@@ -143,3 +143,6 @@ We have 2 returned functions because it allows chaining and dispatch accumulatin
 }
 ```
 > Output `dispatching2 he` `dispatching he`. It is because `dispatch` (next()) accumulates logic (becomes bigger) after each call and it is passed already improved to next middlware.
+
+> Check inner components render after parent shouldComponentUpdate
+Checked: inner component render doesn't run if outer component shouldComponentUpdate returns false
