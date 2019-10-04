@@ -58,16 +58,37 @@ function Page(props) {
 // ... which renders ...
 {props.userLink}
 ```
-- `Context.Provider`
+
+### `Context.Provider`
 ```jsx
-<MyContext.Provider value={/* some value */}>
+export const ThemeContext = React.createContext({ val: 'val' });
+// val is default context value
+```
+```jsx
+import {ThemeContext} from './theme-context';
 class MyClass extends React.Component {
   componentDidUpdate() {
-    let value = this.context;
+    let value = this.context; // this.state.val from App component
   }
 }
 
-MyClass.contextType = MyContext;
+MyClass.contextType = ThemeContext;
+```
+```jsx
+import {ThemeContext} from './theme-context';
+class App extends React.Component {
+    state = {
+        val: 'newVal'
+    };
+
+    render() {
+        return (
+            <ThemeContext.Provider value={this.state.val}>
+                <MyClass></MyClass>
+            </hemeContext.Provider>
+        );
+    }
+}
 ```
 For function components
 ```jsx
@@ -77,6 +98,8 @@ For function components
 ```
 Context objects should be created using 
 `React.createContext({})`
+
+---
 
 - defaultValue 
 ```jsx
