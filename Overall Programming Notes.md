@@ -68,3 +68,5 @@ class NewsFacade {
 > USE NANO EDITOR FROM TERMINAL
 
 > TERMINAL: you can combine commands with `&&` or `;`
+
+> Open Webstorm project from terminal: open -a /Applications/WebStorm.app `here should be folder path`
