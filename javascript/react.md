@@ -106,3 +106,7 @@ Context objects should be created using
 <input type="text"  defaultValue="some val" ref={this.input} /> 
 ``` 
 Default value props exists for uncontrolled components to have possibility to set default value. If to set just value it willn't have a possibility to change a `value` prop of input
+
+---
+
+When you use css modules you can prevent adding hash to some classes using `:global()`
