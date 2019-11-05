@@ -73,4 +73,4 @@ class NewsFacade {
 
 > Mac Set Screenshot hotkeys: alt + 3 copy selected area to clipboard
 
-> Mac Set Screenshot hotkeys: alt + 4 save selected area as a file
+> <strong>Mac Set Screenshot hotkeys: alt + 4 save selected area as a file</strong>
