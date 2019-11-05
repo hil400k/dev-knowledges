@@ -71,6 +71,6 @@ class NewsFacade {
 
 > Open Webstorm project from terminal: open -a /Applications/WebStorm.app `here should be folder path`
 
-> Mac Set Screenshot hotkeys: alt + 3 copy selected area to clipboard
+> <strong>Mac Set Screenshot hotkeys: alt + 3 copy selected area to clipboard</strong>
 
 > <strong>Mac Set Screenshot hotkeys: alt + 4 save selected area as a file</strong>
