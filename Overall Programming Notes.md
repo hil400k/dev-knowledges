@@ -63,7 +63,7 @@ class NewsFacade {
 
 > open -a telegram; open -a skype; open -a webstorm; open -a chrome (MAC command to run few app in one time from terminal)
 
-> `cd ~/; nano .bash_profile` `allias add-alias="cd ~/; nano .bash_profile"` TO Add New Alias Command To Add Aliase
+> `cd ~/; nano .bash_profile` `alias add-alias="cd ~/; nano .bash_profile"` TO Add New Alias Command To Add Aliase
 
 > USE NANO EDITOR FROM TERMINAL
 
