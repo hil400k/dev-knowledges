@@ -17,7 +17,7 @@ function Parent() {
 }
 Parent.prototype.log = function() { console.log(this.name) }
 ```
-> It will set `__proto__` property to Parent.prototype for objects created with new.
+> It will set `__proto__` property to Parent.prototype (const o = new Parent(); o.__proto__ === ...prototype) for objects created with new.
 
 > Next code is doing the same
 ```js
@@ -28,7 +28,9 @@ Parent.prototype.log = function() { console.log(this.name) }
 ```js
 Parent.prototype → { constructor: Parent }
 ```
-
+---
+---
+---
 - Rendering starts only after JS processed all calculations.
 - JS engine works 'First in - First out'. For example next tasks: 
 
