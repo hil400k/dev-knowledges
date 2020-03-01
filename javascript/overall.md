@@ -6,8 +6,11 @@ var foo = 10; bar = 3; (function() { var foo = 2; bar = 1; }()); console.info(fo
 ### Prototype
 
 > All JavaScript objects inherit properties and methods from a prototype.
+
 > Date objects from Date.prototype
+
 > Array objects from Array.prototype
+
 > Date objects, Array objects inherit from Object.prototype.
 
 ```js
