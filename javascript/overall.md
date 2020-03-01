@@ -8,7 +8,7 @@ var foo = 10; bar = 3; (function() { var foo = 2; bar = 1; }()); console.info(fo
 ```js
 
 const item = {};
-item.__proto__ // це і є прототип об'єкту
+item.__proto__ // this is the prototype
 
 ```
 ```js
