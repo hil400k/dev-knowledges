@@ -69,3 +69,9 @@ activeConcerts = (ticketSales.filter((t)=>{
    return t.isActive;
 }))
 ```
+
+### Date
+- Convert date to ISO format: `new Date('07/29/2019 04:00:00').toISOString();`
+- Current date to ISO format: `new Date().toISOString()`
+- Convert date to UTC (date is the same but more readable format): `new Date('07/29/2019 04:00:00').toUTCString();`
+- `new Date()` always returns date in current timezone, even when we pass UTC/ISO string
