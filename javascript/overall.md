@@ -83,3 +83,23 @@ activeConcerts = (ticketSales.filter((t)=>{
 - Current date to ISO format: `new Date().toISOString()`
 - Convert date to UTC (date is the same but more readable format): `new Date('07/29/2019 04:00:00').toUTCString();`
 - `new Date()` always returns date in current timezone, even when we pass UTC/ISO string
+
+### async/await
+- `await` is possible to set only within async functions
+- `await` waits for result of promise after operator, example `let result = await promise`
+- `async` guaranties that function will return a promise
+
+```js
+(async function() {
+  const af = async () => {
+    const result = await new Promise(resolve => {
+      setTimeout(() => resolve(10), 1000);
+    });
+
+    return result;
+  }
+
+  af().then(console.log);
+})();
+```
+it will return `10`
