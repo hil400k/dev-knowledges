@@ -82,7 +82,7 @@ HTTP/HTTPS(encrypted) - protocols
 ```
 HTTPS: request a page: request to the server -> 
 agreement between the web browser and web server about how to encrypt the data (handshake):
-    Web server sends certificate (with public key) to the browser -> 
+    Web server sends SSL certificate (with public key) to the browser -> 
     Browser sends certificate verified message to server
 Browser generates symmetric key and encrypts it using public key (key from the server) ->
 Browser sends this encrypted symmetric key to the server -> 
@@ -90,3 +90,4 @@ This encrypted key is used for entire session.
 ```
 
 > Symmetric key means that we need the same key to encrypt and decrypt. Asymmetric is opposite.
+> ssl makes sure that data between two systems is imposible to read.
