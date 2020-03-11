@@ -103,3 +103,13 @@ activeConcerts = (ticketSales.filter((t)=>{
 })();
 ```
 it will return `10`
+
+### CORS
+- simple (get, post, head)
+- not simple (put, delete ...)
+
+> Browser asks server for permission to do some request (not simple requests)
+
+> Server sends `Access-Control-Allow-Origin` with value (url of a website from which this request was sent) if server allows to send CORS.
+
+
