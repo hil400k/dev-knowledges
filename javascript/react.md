@@ -119,7 +119,10 @@ const mapDispatchToProps = dispatch => {
       dispatch(toggleTodo(id))
     }
   }
-}```; without redux-thunk 
+}
+```
+ without redux-thunk:
+
 ```js
 const mapDispatchToProps = dispatch => {
   return {
@@ -127,4 +130,5 @@ const mapDispatchToProps = dispatch => {
       dispatch(toggleTodo(id))
     }
   }
-}```
+}
+```
