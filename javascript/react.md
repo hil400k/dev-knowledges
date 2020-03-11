@@ -112,17 +112,19 @@ Default value props exists for uncontrolled components to have possibility to se
 When you use css modules you can prevent adding hash to some classes using `:global()`
 
 > Redux-thunk: why should we use it for async? - It allows us to have and use `dispatch` after some time is last and don't care to pass it from a component. Redux-thunk returns function with dispatch param
-`const mapDispatchToProps = dispatch => {
+```js
+const mapDispatchToProps = dispatch => {
   return {
     onTodoClick: id => dispatch =>
       dispatch(toggleTodo(id))
     }
   }
-}`; without redux-thunk 
-`const mapDispatchToProps = dispatch => {
+}```; without redux-thunk 
+```js
+const mapDispatchToProps = dispatch => {
   return {
     onTodoClick: id => {
       dispatch(toggleTodo(id))
     }
   }
-}`
+}```
