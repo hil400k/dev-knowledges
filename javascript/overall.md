@@ -103,3 +103,32 @@ activeConcerts = (ticketSales.filter((t)=>{
 })();
 ```
 it will return `10`
+
+### CORS
+- simple (get, post, head)
+- not simple (put, delete ...)
+
+> Browser asks server for permission to do some request: Option request with a deteils of request that should be sent:
+Access-Control-Request-Method & Access-Control-Request-Headers (not simple requests).
+
+> Browser automatically adds header `Origin` with a url of website to the request. Server should add `Access-Control-Allow-Origin` to response headers if it allows this request. if there are no such header, browser will understand this response as an error.
+
+> Server sends `Access-Control-Allow-Origin` with value (url of a website from which this request was sent) if server allows to send CORS.
+
+> Use `withCredentials` header to send cookies and http authorazation to ask access.
+
+
+### Patterns
+
+- Factory pattern is needed in cases when you want to have a control on creation of objects. For example to have a possibility to add some param or calculations for all objects before creating.
+
+- Abstract Factory is a controller for another Factories. It will use required factory depended on requirements.
+```js
+function AbstractFactory(type) {
+    return type === 'small' ? SmallFactory() : largeFactory();
+}
+
+// type is small | large
+```
+
+---
