@@ -27,3 +27,8 @@ Here are the lifecycle hooks available, in the order in which they are invoked:
 > ngAfterViewChecked: Called after a component’s view or child view is checked.
 
 > ngOnDestroy: Called once when the component is destroyed and a good hook to use to cleanup and unsubscribe from observables.
+---
+
+> Using onPush strategy allows to react only on input reference changes instead of reaction to mutating an object.
+
+> Default change detection strategy: When the state of one of the components changes, no matter where it is in the tree, a change detection pass is triggered for the whole tree (all app). This happens because Angular scans for changes from the top component node, all the way to the bottom leaves of the tree. 
