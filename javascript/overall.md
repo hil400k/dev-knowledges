@@ -143,3 +143,7 @@ function AbstractFactory(type) {
 ```
 
 ---
+---
+### Rx.js
+- shareRaplay is an operator that is used to not create separate stream for eahc subscriber.
+It is to use shared one. Useful to handle 2 async pipes for one request. In result app will send only one.
