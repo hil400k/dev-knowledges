@@ -143,7 +143,7 @@ function AbstractFactory(type) {
 ```
 
 ---
----
-### Rx.js
-- shareRaplay is an operator that is used to not create separate stream for eahc subscriber.
-It is to use shared one. Useful to handle 2 async pipes for one request. In result app will send only one.
+
+> 3 event states: event capturing, event target, event bubling.
+> Event capturing: let's imagine we have parent div and child div and we clicked on a child div; event capturing state gives us a possibility to avoid call of click handler on child div from controller of a parent div;
+avoid a call of 
