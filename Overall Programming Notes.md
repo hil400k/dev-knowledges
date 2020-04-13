@@ -95,5 +95,5 @@ This encrypted key is used for entire session.
 ---
 
 ### Git
-To ignore some already tracked file and to do not checkout/push changes from it to repo
+To ignore some ALREADY TRACKED file and to do not checkout/push changes from it to repo
 git update-index --assume-unchanged somefile.js
