@@ -92,8 +92,3 @@ This encrypted key is used for entire session.
 > Symmetric key means that we need the same key to encrypt and decrypt. Asymmetric is opposite.
 > ssl makes sure that data between two systems is imposible to read.
 
----
-
-### Git
-To ignore some ALREADY TRACKED file and to do not checkout/push changes from it to repo
-git update-index --assume-unchanged somefile.js

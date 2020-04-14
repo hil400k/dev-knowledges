@@ -37,5 +37,27 @@ Here are the lifecycle hooks available, in the order in which they are invoked:
 
 ---
 ### Rx.js
-- shareRaplay is an operator that is used to not create separate stream for eahc subscriber.
+- shareRaplay is an operator that is used to not create separate stream for each subscriber.
 It is to use shared one. Useful to handle 2 async pipes for one request. In result app will send only one.
+- `from([1,2,3,4]).subscribe(val => console.log(val));` Output: 4 separate 1,2,3,4
+- `of([1,2,3,4]).subscribe(val => console.log(val));` Output: array [1,2,3,4]
+- `mergeAll`
+```ts
+const firstSource = of(1);
+const secondSource = val => of(`asyncToolPrefix: ${val}`);
+
+const example = firstSource.pipe(
+  map(val => secondSource(val)),
+  mergeAll()
+);
+
+const subscribe = example.subscribe(val => console.log(val));
+```
+Output: `asyncToolPrefix: 1`. It would log an observable if mergeAll wasn't used.
+
+
+#### Map differences:
+
+- `map` returns not an observable
+- `switchMap` returns observable
+
