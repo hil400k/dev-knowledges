@@ -61,3 +61,8 @@ Output: `asyncToolPrefix: 1`. It would log an observable if mergeAll wasn't used
 - `map` returns not an observable
 - `switchMap` returns observable
 
+### Hot and Cold Observables
+Cold observable produces separate stream for each subscriber. Producers created by the code: `of, from, timer, interval`
+Hot Observables share stream for each subsciber.
+Hot observables producers are independant and external. For example `fromEvent` of `WebSockets` messages.
+
