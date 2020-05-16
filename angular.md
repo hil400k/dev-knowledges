@@ -66,3 +66,9 @@ Cold observable produces separate stream for each subscriber. Producers created 
 Hot Observables share stream for each subsciber.
 Hot observables producers are independant and external. For example `fromEvent` of `WebSockets` messages.
 
+#### Angular 9 new features
+- Ivy compiller by default
+- improved debuggeing
+- i18n improved
+- unit-testing faster
+
