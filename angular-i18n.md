@@ -26,4 +26,10 @@ To mark attribute for translation use `i18n-attr`, e.g. `title` will be `i18n-ti
 
 If you need a translation depended on variable value you need to translate all of alternative messages.
 E.g. Gender is a component prop. Select is i18n operator. male, female, other are possible values.
-`<span i18n>The author is {gender, select, male {male} female {female} other {other}}</span>`
+```
+<span i18n>The author is {gender, select, male {male} female {female} other {other}}</span>
+```
+
+To create source file: `ng xi18n --output-path src/locale --out-file source.xlf `
+
+To set base locale: `ng xi18n --i18n-locale fr`
