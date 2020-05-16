@@ -33,3 +33,27 @@ E.g. Gender is a component prop. Select is i18n operator. male, female, other ar
 To create source file: `ng xi18n --output-path src/locale --out-file source.xlf `
 
 To set base locale: `ng xi18n --i18n-locale fr`
+
+To translate source text you need to use `terget` element
+```
+<trans-unit id="introductionHeader" datatype="html">
+  <source>Hello i18n!</source>
+  <target>Bonjour i18n !</target>
+  <note priority="1" from="description">An introduction header for this sample</note>
+  <note priority="1" from="meaning">User welcome</note>
+</trans-unit>
+```
+`id` attr depends upon the content of the template text and its assigned meaning.
+
+Translation of text with `select` operator consists of few parts. E.g. our <strong>gender</strong> sample
+```
+</trans-unit>
+<trans-unit id="f99f34ac9bd4606345071bd813858dec29f3b7d1" datatype="html">
+  <source>The author is <x id="ICU" equiv-text="{gender, select, male {...} female {...} other {...}}"/></source>
+  <target>L'auteur est <x id="ICU" equiv-text="{gender, select, male {...} female {...} other {...}}"/></target>
+</trans-unit>
+<trans-unit id="eff74b75ab7364b6fa888f1cbfae901aaaf02295" datatype="html">
+  <source>{VAR_SELECT, select, male {male} female {female} other {other} }</source>
+  <target>{VAR_SELECT, select, male {un homme} female {une femme} other {autre} }</target>
+</trans-unit>
+```
