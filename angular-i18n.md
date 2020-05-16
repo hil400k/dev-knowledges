@@ -106,6 +106,5 @@ To apply specific build options to only one locale, you can create a custom loca
 You can run with: `ng serve --configuration=fr`
 
 > Development server supports only one locale per build !!!
-
-> Angular i18n doesn't support dynamic languages
+You cannot change language at runtime
 
