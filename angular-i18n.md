@@ -57,3 +57,53 @@ Translation of text with `select` operator consists of few parts. E.g. our <stro
   <target>{VAR_SELECT, select, male {un homme} female {une femme} other {autre} }</target>
 </trans-unit>
 ```
+
+### How to use translations
+
+Open angular.json file and add next:
+
+```
+"projects": {
+  ...
+  "project-name": {
+    ...
+    "i18n": {
+      "sourceLocale": "en-US",
+      "locales": {
+        "ua": "src/locale/messages.ua.xlf"
+      }
+    }
+  }
+}
+```
+Here you specify sourceLocale and paths to locales
+
+To build packages for all languages `ng build --localize`, for specific `ng build --localize=ua`
+
+To apply specific build options to only one locale, you can create a custom locale-specific configuration. In this case, the localize option specifies the single locale, as shown here.
+```
+"build": {
+  ...
+  "configurations": {
+    ...
+    "fr": {
+      "localize": ["fr"],
+      "main": "src/main.fr.ts",
+      ...
+    }
+  }
+},
+"serve": {
+  ...
+  "configurations": {
+    ...
+    "fr": {
+      "browserTarget": "*project-name*:build:fr"
+    }
+  }
+}
+```
+You can run with: `ng serve --configuration=fr`
+
+
+
