@@ -4,4 +4,4 @@
 - react virtual dom ?
 - css difference between align-items & justify-content ?
 - micro & macro tasks ?
-
+- remind react
