@@ -72,3 +72,25 @@ Hot observables producers are independant and external. For example `fromEvent` 
 - i18n improved
 - unit-testing faster
 
+### forkJoin & combineLatest
+- forkJoin: waits until last observable completes (completes!!!) and then returns array of value. `forkJoin([obs1, obs2, obs3])` all this
+observables runs in parallel;
+- combineLatest: returns new value every time new `combineLatest([obs1, obs2, obs3])` obs do. 
+You won’t see the result until each of the streams have emitted at least one value.
+
+```ts
+const $1 = interval(1000).pipe(take(3));
+const $2 = interval(2000).pipe(take(3));
+
+combineLatest([$1, $2]).subscribe((data) => {
+  console.info(data);
+})
+```
+output:
+```
+[1,0]
+[2,0]
+[2,1]
+[2,2]
+```
+Replace forkjoin with combineLatest will return `[2, 2]` only
