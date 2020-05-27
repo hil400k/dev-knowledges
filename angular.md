@@ -93,4 +93,14 @@ output:
 [2,1]
 [2,2]
 ```
-Replace forkjoin with combineLatest will return `[2, 2]` only
+Replace forkjoin with combineLatest will return `[2, 2]`
+
+### filter & takeWhile
+
+```ts
+const $1 = from([1,2,3,1,2]);
+$1.pipe(takeWhile(val => val < 2)).subscribe(console.info);
+$1.pipe(filter(val => val < 2)).subscribe(console.info);
+```
+output: takewhile: 1; filter 1,1
+takeWhile completes after first wrong value
