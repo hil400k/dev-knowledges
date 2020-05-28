@@ -104,3 +104,6 @@ $1.pipe(filter(val => val < 2)).subscribe(console.info);
 ```
 output: takewhile: 1; filter 1,1
 takeWhile completes after first wrong value
+
+---
+
