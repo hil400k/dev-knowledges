@@ -1,0 +1,19 @@
+{
+  "name": "dev-knowledges",
+  "version": "1.0.0",
+  "description": "Dev knowledges",
+  "main": "README.md",
+  "scripts": {
+    "update": "git add .; git commit -m 'update'; git push origin HEAD"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hil400k/dev-knowledges.git"
+  },
+  "author": "hil400k",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hil400k/dev-knowledges/issues"
+  },
+  "homepage": "https://github.com/hil400k/dev-knowledges#readme"
+}
