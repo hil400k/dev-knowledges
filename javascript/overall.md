@@ -147,3 +147,14 @@ function AbstractFactory(type) {
 > 3 event states: event capturing, event target, event bubling.
 > Event capturing: let's imagine we have parent div and child div and we clicked on a child div; event capturing state gives us a possibility to avoid call of click handler on child div from controller of a parent div;
 avoid a call of 
+
+### sort
+
+```js
+[1,2].sort((a, b) => {
+  console.log(a, b);
+  return a - b;
+});
+```
+Output 2 1 // from console log
+Output [1, 2]
