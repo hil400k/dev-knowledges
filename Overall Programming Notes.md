@@ -92,3 +92,17 @@ This encrypted key is used for entire session.
 > Symmetric key means that we need the same key to encrypt and decrypt. Asymmetric is opposite.
 > ssl makes sure that data between two systems is imposible to read.
 
+---
+
+Http headers examples: `WWW-Authenticate` `Authorization` `Accept`
+`Keep-Alive` `Cookie` `Content-Type`
+
+---
+
+SOLID
+- single responsibility
+- open/closed open for extension closed for modification
+- liskov substitution: objects can be replaced with their extended objects without code change
+- interface segregation. better to have more interfaces than one large
+- dependency inversion: top level modules are independed from low level modules.
+Abstractions are not depended of details. Details depended of abstractions.
