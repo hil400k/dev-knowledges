@@ -17,3 +17,9 @@ git branch -m old_branch new_branch         # Rename branch locally
 git push origin :old_branch                 # Delete the old branch    
 git push --set-upstream origin new_branch   # Push the new branch, set local branch to track the new remote
 ```
+
+---
+reset last commit but do not remove the changes of it: 
+`git reset HEAD~1`
+
+use `git reset --hard HEAD~1` to reset last commit and remove changes
