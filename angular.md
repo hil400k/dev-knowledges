@@ -156,5 +156,5 @@ usage
 })
 ```
 or we can manually  recalculate values and set them to component props.
-
-if we need to react to component input ptops changes and recalculate this value we can use `ngOnChanges`
+if we need to react to component input ptops changes and recalculate this value we can use `ngOnChanges`.
+We can try to use `readonly disableERC20$: Observable<boolean> = observeProperty2(this, 'disableERC20')`
