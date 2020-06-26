@@ -147,3 +147,14 @@ usage
   {{item.text | customPipe: 'piped'}}
 </div>
 ```
+
+#### To avoid multiple method calls in template we should use pure pipe
+```js
+@Pipe({
+  name: 'getMemberShipLevel',
+  pure: true
+})
+```
+or we can manually  recalculate values and set them to component props.
+
+if we need to react to component input ptops changes and recalculate this value we can use `ngOnChanges`
