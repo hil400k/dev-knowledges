@@ -106,3 +106,57 @@ SOLID
 - interface segregation. better to have more interfaces than one large
 - dependency inversion: top level modules are independed from low level modules.
 Abstractions are not depended of details. Details depended of abstractions.
+
+---
+###Scope
+```js
+if (true) {
+  const message = 'Hello';
+}
+console.log(message); // ReferenceError: message is not defined
+```
+the same will be with `let`  
+please note, that we have `true` and this block is executed anyway  
+
+```js
+const i = {
+  name: `item${this.age}`,
+  age: 11
+} 
+console.info(i) // // {name: "itemundefined", age: 11}
+```
+
+```js
+const i = {
+  name: function() {
+    return `item${this.age}`
+  },
+  age: 11
+}
+
+console.info(i.name()); // item11
+```
+
+```js
+const i = {
+  name: () => {
+    return `item${this.age}`
+  },
+  age: 11
+}
+
+console.info(i.name()); // itemundefined
+```
+
+```js
+const i = {
+  name: 'super'
+};
+
+i.method = function() {
+  console.info(this.name);
+}
+
+i.method(); // super
+```
+> Value of this is defined during code execution

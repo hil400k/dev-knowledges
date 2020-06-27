@@ -51,3 +51,5 @@ Sample text here...
 →
 
 ↓
+
+to set curret to new line use two spaces or \ symbol
