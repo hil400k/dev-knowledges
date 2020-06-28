@@ -160,3 +160,18 @@ i.method = function() {
 i.method(); // super
 ```
 > Value of this is defined during code execution
+---
+### Babling & capturing
+
+ `event.target` is a particular element where event triggered;  
+ `event.currentTarget` is an element where handler is assigned  
+ Example: onclick is assigned to parent div; user clicks on any inner element;  
+ `event.target` is this element; `event.currentTarget` is always div
+ 
+ 3 phases of DOM event: `capturing phase`(from document to particular el)  
+  `target phase`(reached the target) `bubbling stage`(from target to document)
+  
+The only possible ways to turn on capturing are `addEventListener` method with next params:  
+`elem.addEventListener(..., {capture: true})`  
+`elem.addEventListener(..., true)`  
+it can be usefull when you want to do smth before the usual element handler
