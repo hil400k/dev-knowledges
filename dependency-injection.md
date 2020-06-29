@@ -17,6 +17,9 @@ const injector = {
       deps.forEach((depKey) => {
         const dep = self.dependencies[depKey];
         args.push(dep && depKey!= '' ? dep : a.shift())
+        // shift sequentially returns not dependency arguments 
+        // 'other-name' is not a dependency; it will be recognised as
+        // first params that doesn't have a dep, other in our case
       })
 
       func.apply(scope || {}, args);
