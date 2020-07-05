@@ -158,3 +158,23 @@ usage
 or we can manually  recalculate values and set them to component props.
 if we need to react to component input ptops changes and recalculate this value we can use `ngOnChanges`.
 We can try to use `readonly disableERC20$: Observable<boolean> = observeProperty2(this, 'disableERC20')`
+
+### take(1)  
+```js
+
+const int1 = interval(1000);
+const int2 = interval(1800);
+
+int1.pipe(
+  take(1),
+  mergeMap(val => {
+    return int2.pipe(
+      map(val2 => {
+        return `${val}, ${val2}`;
+      })
+    );
+  }),
+).subscribe(v => console.log('v', v));
+```
+should be places in the end of observeble (not like on example).  
+example case will log values from second observable
