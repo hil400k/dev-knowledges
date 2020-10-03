@@ -156,5 +156,5 @@ avoid a call of
   return a - b;
 });
 ```
-Output 2 1 // from console log
+Output 2 1 // from console log  
 Output [1, 2]

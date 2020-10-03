@@ -1,0 +1,4 @@
+- currentTarget, target
+- http https
+- react a bit
+- ngrx try
