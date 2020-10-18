@@ -105,7 +105,9 @@ SOLID
 - liskov substitution: objects can be replaced with their extended objects without code change
 - interface segregation. better to have more interfaces than one large
 - dependency inversion: top level modules are independed from low level modules.
-Abstractions are not depended of details. Details depended of abstractions.
+Abstractions are not depended of details. Details depended of abstractions.  
+https://medium.com/webbdev/solid-4ffc018077da
+
 
 ---
 ###Scope
