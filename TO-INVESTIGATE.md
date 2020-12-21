@@ -8,3 +8,5 @@ justify-content: space-between will place this columns.
 
 + micro & macro tasks: macro: timeout, script, event; micro: promise
 - remind react
+
+- check how to decouple reactive forms. problem: controls values are used in parent component. controls should be moved to child component. where should be placed controls
