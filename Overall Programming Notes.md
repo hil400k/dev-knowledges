@@ -177,3 +177,15 @@ The only possible ways to turn on capturing are `addEventListener` method with n
 `elem.addEventListener(..., {capture: true})`  
 `elem.addEventListener(..., true)`  
 it can be usefull when you want to do smth before the usual element handler
+
+---
+Async & defer;  
+async execution is right after  
+defer waits for all methods executed and order of script matters
+
+Map & Set (only unique values); WeakMap WeakSet;
+
+
+
+
+

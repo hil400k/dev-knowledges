@@ -8,3 +8,6 @@ justify-content: space-between will place this columns.
 
 + micro & macro tasks: macro: timeout, script, event; micro: promise
 - remind react
+
+
+- providers registration details
