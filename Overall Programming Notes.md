@@ -185,7 +185,24 @@ defer waits for all methods executed and order of script matters
 
 Map & Set (only unique values); WeakMap WeakSet;
 
+---
 
+CI/CD  
 
+CI: 
+- npm modules installation
+- code check: eslint, tslint ...
+- tests
+- project build  
+
+CD:  
+- deploy to stage
+- deploy to production
+- tests by qas
+  
+  Main CI/CD services:  
+  Bamboo, Jenkins, Github Actions, Gitlab Actions  
+  
+  
 
 
