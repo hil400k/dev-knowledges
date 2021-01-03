@@ -178,3 +178,10 @@ int1.pipe(
 ```
 should be places in the end of observeble (not like on example).  
 example case will log values from second observable
+
+---
+
+AOT & JIT differences
+AOT allows to not load angular core to bundle because all is already compiled; AOT is used on a prod. JOT compiles at runtime;
+
+
