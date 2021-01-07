@@ -203,6 +203,77 @@ CD:
   Main CI/CD services:  
   Bamboo, Jenkins, Github Actions, Gitlab Actions  
   
-  
+---
 
+Security  
+Cross-Site Request Forgery (CSRF) — CSRF is an attack that tricks the victim into submitting a malicious request.  
+Cross-Site Scripting (XSS) Attack — XSS is a type of attack in which an attacker inputs a malicious script into the web application.  
+DOS (Denial Of Service) Attack — DOS attack is a cyber-attack in which a perpetrator seeks to make a server resource unavailable to the actual users by disrupting the services of a server connected to the internet.  
 
+---
+
+IndexDB(no size limit)(NoSQL database)  
+It can store more than localStorage  
+db is a store  
+`onupgradeneeded` updates db  
+It is possible to add object keys as indexes for search  
+Cursors are used to large amount of data
+
+```js
+let db;
+let dbReq = indexedDB.open('myDatabase', 1);
+dbReq.onupgradeneeded = function(event) {
+  // Set the db variable to our database so we can use it!  
+  db = event.target.result;
+
+  // Create an object store named notes. Object stores
+  // in databases are where data are stored.
+  let notes = db.createObjectStore('books', {autoIncrement: true});
+}
+
+let transaction = db.transaction("books", "readwrite"); // (1)
+
+// get objects store(сховище)
+let books = transaction.objectStore("books"); // (2)
+
+let book = {
+  id: 'js',
+  price: 10,
+  created: new Date()
+};
+
+let request = books.add(book); // (3)
+
+request.onsuccess = function() { // (4)
+  console.log("Book saved to the store", request.result);
+};
+
+request.onerror = function() {
+  console.log("Error", request.error);
+};
+```
+
+---
+
+Cookies look like a string, you can set key-value pairs with expiration date.  
+`document.cookie = "user=John";` rewrites only user cookie  
+cookie options are not visible when trying to read cookie
+
+---
+
+OAuth - is an open standard for authorization  
+OAuth is a protocol for authorization  
+4 modes are available: 1) back + front configurations 2) front only configuration 3) not provider (Google, etc.) email and password 4)  
+Security: The answer is, unquestionably, NO! OAuth2 is NOT (inherently) SECURE. Numerous, well-known security issues with the protocol that have yet to be addressed.  
+
+OAuth Central Components:
+- Scopes and Consent: Permissions. Scopes are what you see on the authorization screens when an app requests permissions. They’re bundles of permissions asked for by the client when requesting a token.
+- Actors: The actors in OAuth flows are as follows:
+  1. Resource Owner: owns the data in the resource server. For example, I’m the Resource Owner of my Facebook profile.
+  2. Resource Server: The API which stores data the application wants to access
+  3. Client: the application that wants to access your data
+  4. Authorization Server: The main engine of OAuth
+- Clients: devices, 
+- Tokens
+- Authorization Server
+- Flows
