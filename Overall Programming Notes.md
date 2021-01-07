@@ -262,7 +262,7 @@ cookie options are not visible when trying to read cookie
 ---
 
 OAuth - is an open standard for authorization  
-OAuth is a protocol for authorization  
+
 4 modes are available: 1) back + front configurations 2) front only configuration 3) not provider (Google, etc.) email and password 4)  
 Security: The answer is, unquestionably, NO! OAuth2 is NOT (inherently) SECURE. Numerous, well-known security issues with the protocol that have yet to be addressed.  
 
@@ -277,3 +277,15 @@ OAuth Central Components:
 - Tokens
 - Authorization Server
 - Flows
+
+---
+
+Cloud services:  
+Examples: Amazon S3, Amazon Lambda, Amazon Glacier, Amazon SNS, Amazon Cloudfront.  
+Cloud refers to a distinct IT environment that is designed for the purpose of remotely provisioning IT resources  
+Cloud Computing Models: Infrastructure as a Service (IaaS), Platform as a Service (PaaS),
+Software as a Service (SaaS)  
+SaaS: Google docs, Gmail, Google drive  
+PaaS(programming language execution env, OS, Web Server, Database):
+Amazon Elastic, Heroku, windows azure, 
+IaaS(CPU, GPU, Data Storage, Servers & Network): Amazon EC2
