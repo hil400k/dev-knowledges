@@ -47,7 +47,7 @@ request.onerror = function() {
 };
 ```
 
-###Design / Architecture
+### Design / Architecture
 
 SOLID  
 JavaScript Design Patterns (Basic)
@@ -60,7 +60,7 @@ JavaScript Design Patterns (Basic)
 
 OOP principles: encapsulation, abstraction, polymorphism, inheritance
 
-#MVC. MVP. MVVM.?
+# MVC. MVP. MVVM.?
 
 ### CI/CD  
 
@@ -97,12 +97,12 @@ CD:
   Main CI/CD services:  
   Bamboo, Jenkins, Github Actions, Gitlab Actions  
   
-#Webpack - ?  
-#Merge vs Rebase - ?
+# Webpack - ?  
+# Merge vs Rebase - ?
 
 ### Networks
 
-#dns, cors, web-sockets, http?
+# dns, cors, web-sockets, http?
 
 ### Security
 
@@ -145,7 +145,7 @@ IaaS(CPU, GPU, Data Storage, Servers & Network): Amazon EC2
 
 Unit testing, test-coverage, spy, karma, jest, jasmine, mock
 
-#Types of testing?
+# Types of testing?
 
 ### JS Code Quality & Best Practices 
 
@@ -155,5 +155,5 @@ lint, refactoring, static type checking: typescript
 
 scrum
 
-#General understanding of SDLC model?
+# General understanding of SDLC model?
 
