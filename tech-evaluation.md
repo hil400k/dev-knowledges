@@ -101,7 +101,10 @@ CD:
   Bamboo, Jenkins, Github Actions, Gitlab Actions  
   
 # Webpack - ?  
-# Merge vs Rebase - ?
+Merge vs Rebase.  
+Merge creates 1 commit for all changes of merged in branch.
+Rebase add all commits of merged in branch to master.
+[https://stackoverflow.com/a/9147389/4675980]
 
 ### Networks
 
