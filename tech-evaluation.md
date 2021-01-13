@@ -60,7 +60,10 @@ JavaScript Design Patterns (Basic)
 
 OOP principles: encapsulation, abstraction, polymorphism, inheritance
 
-# MVC. MVP. MVVM.?
+MVC. MVP. MVVM.  
+MVC MVP difference: View in MVC is not bound to Controller and view is stateless.  
+MVC just displays view; MVP comunicates with view through an interface.  
+MVVM pattern supports two way data binding between view and view-model.
 
 ### CI/CD  
 
