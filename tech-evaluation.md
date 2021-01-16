@@ -150,8 +150,15 @@ IaaS(CPU, GPU, Data Storage, Servers & Network): Amazon EC2
 ### Testing
 
 Unit testing, test-coverage, spy, karma, jest, jasmine, mock
-
-# Types of testing?
+  
+Types of testing:  
+Unit-tests.  
+Integration tests. (Integration tests verify that different modules or services used by your application work well together).  
+Functional tests. (Functional tests focus on the business requirements of an application. They only verify the output of an action and do not check the intermediate states of the system when performing that action).  
+End-to-end tests. (End-to-end testing replicates a user behavior with the software in a complete application environment. It verifies that various user flows work as expected and can be as simple as loading a web page or logging in or much more complex scenarios verifying email notifications, online payments, etc).  
+Acceptance testing. (Acceptance tests are formal tests executed to verify if a system satisfies its business requirements).  
+Performance testing. (Performance tests check the behaviors of the system when it is under significant load).  
+Smoke testing. (Smoke tests are basic tests that check basic functionality of the application. They are meant to be quick to execute, and their goal is to give you the assurance that the major features of your system are working as expected).  
 
 ### JS Code Quality & Best Practices 
 
