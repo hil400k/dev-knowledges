@@ -174,5 +174,6 @@ lint, refactoring, static type checking: typescript
 
 scrum
 
-# General understanding of SDLC model?
+General understanding of SDLC(Systems Development Life Cycle) model.  
+Models: Agile, Waterfall, Spiral, V-shaped, Iterative
 
