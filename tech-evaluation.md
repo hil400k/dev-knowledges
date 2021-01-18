@@ -1,3 +1,10 @@
+### Process:  
+- open google sheet form
+- start recording before evaluation begins
+- fill the sheet
+- upload video by the link in ticket
+
+
 ### Data
 Local storage, Session storage, Cookies, indexDB.  
 
