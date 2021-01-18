@@ -6,6 +6,7 @@
 
 - why it is so long?
 - which probs can occur with shift+command+5
+- to check mic + internal volue with `command shift 5`
 
 
 ### Data
