@@ -126,7 +126,38 @@ Rebase add all commits of merged in branch to master.
 
 ### Networks
 
-# dns, cors, web-sockets, http?
+dns.  
+cors.  
+- simple (get, post, head)
+- not simple (put, delete ...)
+
+> Browser asks server for permission to do some request: Option request with a deteils of request that should be sent:
+Access-Control-Request-Method & Access-Control-Request-Headers (not simple requests).
+
+> Browser automatically adds header `Origin` with a url of website to the request. Server should add `Access-Control-Allow-Origin` to response headers if it allows this request. if there are no such header, browser will understand this response as an error.
+
+> Server sends `Access-Control-Allow-Origin` with value (url of a website from which this request was sent) if server allows to send CORS.
+
+> Use `withCredentials` header to send cookies and http authorazation to ask access.
+web-sockets - is a protocol that provides a way of exchanging data between browser and server in persistent connection. Data passed  
+as a packets.
+```
+let socket = new WebSocket("wss://javascript.info/article/websocket/demo/hello");
+
+socket.onopen = function(e) {
+  alert("[open] Connection established");
+  alert("Sending to server");
+  socket.send("My name is John");
+};
+
+socket.onmessage = function(event) {
+  alert(`[message] Data received from server: ${event.data}`);
+};
+
+socket.send({smth: true})
+```
+http  
+
 
 ### Security
 
