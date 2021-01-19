@@ -141,6 +141,8 @@ Access-Control-Request-Method & Access-Control-Request-Headers (not simple reque
 > Use `withCredentials` header to send cookies and http authorazation to ask access.
 web-sockets - is a protocol that provides a way of exchanging data between browser and server in persistent connection. Data passed  
 as a packets.
+
+WebSocket  
 ```
 let socket = new WebSocket("wss://javascript.info/article/websocket/demo/hello");
 
@@ -156,8 +158,12 @@ socket.onmessage = function(event) {
 
 socket.send({smth: true})
 ```
-http  
-
+http statuses:
+1×× Informational
+2×× Success
+3×× Redirection
+4×× Client Error
+5×× Server Error
 
 ### Security
 
