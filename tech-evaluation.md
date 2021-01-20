@@ -6,6 +6,40 @@
 
 - to check mic + internal volue with `command shift 5`
 
+### html5
+types of tags: unpaired, paired, utility tags. 
+
+
+### React
+
+- react component lifecycle
+- controlled uncontrolled components
+- withRouter func.
+- is it possible to pass a value from child to parent?
+- React component is `pure` if it renders the same output for the same state and props
+- React hooks. `const [count, setCount] = useState(0);` 
+```
+useEffect(() => {
+  document.title = `Ви натиснули ${count} разів`;
+}, [count]);
+```
+only mount and unmount
+```
+useEffect(() => {
+  document.title = `Ви натиснули ${count} разів`;
+}, []);
+```
+- react context
+- redux
+
+### Frameworks
+
+The entry (learning) into Angular is tougher than React.  
+React doesn’t come with a routing library.  
+For React You also need to be familiar with state management libraries like MobX or Redux.  
+React doesn't have provided code structure.  
+Angular uses real DOM; react uses Virtual DOM; that`s why React is better for freequent updates
+Angular: 2-way binding; React: 1-way binding;  
 
 ### Data
 Local storage, Session storage, Cookies, indexDB.  
