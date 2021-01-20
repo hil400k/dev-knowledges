@@ -4,8 +4,6 @@
 - fill the sheet
 - upload video by the link in ticket
 
-- why it is so long?
-- which probs can occur with shift+command+5
 - to check mic + internal volue with `command shift 5`
 
 
