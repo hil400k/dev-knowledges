@@ -10,6 +10,21 @@
 types of tags: unpaired, paired, utility tags. 
 https://www.toptal.com/html5/interview-questions
 
+new input types: color, date, url, range  
+
+`defer` - script loads on background. If we have 2 scripts with defer and second (by order) is loaded first it will be executed secondly. Order matters.  
+`async` - script loads on background. async scripts load in the background and run when ready.  
+Both async and defer have one common thing: downloading of such scripts doesn’t block page rendering.  
+
+Meta tags are used to provide useful information to our web pages.  
+Title: Provides a title to the web page.
+Style: Inserts some styles and CSS details to the web page.
+Link: Defines the relationship between one page to another page and an external source.
+
+Improved support for embedding graphics, audio, and video content via the new <canvas>, <audio>, and <video> tags.  
+  
+<!DOCTYPE html> html5; <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> html4;
+
 
 ### React
 
