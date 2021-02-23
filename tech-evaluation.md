@@ -23,7 +23,7 @@ Link: Defines the relationship between one page to another page and an external 
 
 Improved support for embedding graphics, audio, and video content via the new <canvas>, <audio>, and <video> tags.  
   
-<!DOCTYPE html> html5; <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> html4;
+```<!DOCTYPE html>``` html5; ```<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> html4;```
 
 
 ### React
