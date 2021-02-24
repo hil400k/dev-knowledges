@@ -58,6 +58,104 @@ pseudo-elements.
   }
 }
 ```
+  
+### JS.  
+ES6 new features: tpl string; Object.assign; let, const; arrow function; class, extend; Destructuring;   
+
+- `await` is possible to set only within async functions
+- `await` waits for result of promise after operator, example `let result = await promise`
+- `async` guaranties that function will return a promise
+
+```js
+(async function() {
+  const af = async () => {
+    const result = await new Promise(resolve => {
+      setTimeout(() => resolve(10), 1000);
+    });
+
+    return result;
+  }
+
+  af().then(console.log);
+})();
+```
+it will return `10`
+
+Promises  
+Arrow function doesn't have bindings to this and super; doesn't have arguments.  
+
+---
+Scope.  
+```js
+if (true) {
+  const message = 'Hello';
+}
+console.log(message); // ReferenceError: message is not defined
+```
+the same will be with `let`  
+please note, that we have `true` and this block is executed anyway  
+
+```js
+const i = {
+  name: `item${this.age}`,
+  age: 11
+} 
+console.info(i) // // {name: "itemundefined", age: 11}
+```
+
+```js
+const i = {
+  name: function() {
+    return `item${this.age}`
+  },
+  age: 11
+}
+
+console.info(i.name()); // item11
+```
+
+```js
+const i = {
+  name: () => {
+    return `item${this.age}`
+  },
+  age: 11
+}
+
+console.info(i.name()); // itemundefined
+```
+
+```js
+const i = {
+  name: 'super'
+};
+
+i.method = function() {
+  console.info(this.name);
+}
+
+i.method(); // super
+```
+> Value of this is defined during code execution
+---
+
+Babling & capturing.  
+
+ `event.target` is a particular element where event triggered;  
+ `event.currentTarget` is an element where handler is assigned  
+ Example: onclick is assigned to parent div; user clicks on any inner element;  
+ `event.target` is this element; `event.currentTarget` is always div
+ 
+ 3 phases of DOM event: `capturing phase`(from document to particular el)  
+  `target phase`(reached the target) `bubbling stage`(from target to document)
+  
+The only possible ways to turn on capturing are `addEventListener` method with next params:  
+`elem.addEventListener(..., {capture: true})`  
+`elem.addEventListener(..., true)`  
+it can be usefull when you want to do smth before the usual element handler
+
+---
+
 
 
 ### React
