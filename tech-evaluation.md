@@ -47,7 +47,17 @@ display: flex.
 }
 ```
 `!important` (is bad or good).  
-
+ways to add CSS to your page (<style>, <link rel...>, style="").  
+CSS frameworks.  
+z-index.  
+pseudo-elements.  
+```
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+```
 
 
 ### React
