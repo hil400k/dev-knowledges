@@ -26,6 +26,30 @@ Improved support for embedding graphics, audio, and video content via the new <c
 ```<!DOCTYPE html>``` html5; ```<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">``` html4;   
 
 
+### CSS  
+margin: (top, right, bottom, left).  
+box-sizing.  
+display: flex.  
+
+```
+.center { 
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+```
+`!important` (is bad or good).  
+
+
+
 ### React
 
 - react component lifecycle
