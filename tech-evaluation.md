@@ -302,6 +302,15 @@ By setting the mode parameter to either development, production or none, you can
 Merge vs Rebase.  
 Merge creates 1 commit for all changes of merged in branch.
 Rebase add all commits of merged in branch to master.
+```
+git checkout bugFix;
+git rebase master
+```
+order of operands is different to 
+```
+git checkout master
+git merge bugFix
+```
 [https://stackoverflow.com/a/9147389/4675980]
 
 ### Networks
