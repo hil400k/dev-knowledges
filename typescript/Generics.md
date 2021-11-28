@@ -1,5 +1,8 @@
 # Generics
 
+https://www.digitalocean.com/community/tutorials/typescript-generics-in-typescript
+
+
 ```ts
 function someFunc<T>(param: T): T {
   return param;
